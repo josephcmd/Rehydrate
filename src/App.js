@@ -10,9 +10,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Login from "./components/Login"
 function App() {
   return (
     <Router>
+      
+      <Route path="/login" component={Login}/>
       <Route exact path="/">
     <div className="bg-gray-800 h-screen">
       <Navbar/>
